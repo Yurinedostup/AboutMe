@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">About me</string>
+    <string name="name">Yury Nedostup</string>
+    <string name="yellow_star">Yellow Star</string>
+    <string name="bio">Привет, меня зовут Юра.
+    \n\nЯ люблю собирать грибы.
+    \n\nЯ увлекаюсь программированием и хочу стать программистом на Android.
+    \n\nЯ изучаю много всего и всем интересуюсь. Могу потратить 3 часа на изучение чего-то научного, чего никогда не знал.
+    </string>
+</resources>
