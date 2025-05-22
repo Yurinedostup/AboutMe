@@ -7,4 +7,6 @@
     \n\nЯ увлекаюсь программированием и хочу стать программистом на Android.
     \n\nЯ изучаю много всего и всем интересуюсь. Могу потратить 3 часа на изучение чего-то научного, чего никогда не знал.
     </string>
+    <string name="what_is_your_nickname">What is your Nickname</string>
+    <string name="done">Done</string>
 </resources>
