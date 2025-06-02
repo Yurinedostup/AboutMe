@@ -1,10 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:startDestination="@id/aboutFragment">
+    app:startDestination="@id/mainActivity">
+
+    <!-- Главный экран (ваша текущая MainActivity) -->
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.aboutme.MainActivity"
+        android:label="Главная">
+        <action
+            android:id="@+id/action_main_to_details"
+            app:destination="@id/detailsFragment"/>
+        <action
+            android:id="@+id/action_main_to_settings"
+            app:destination="@id/settingsFragment"/>
+    </activity>
+
+    <!-- Фрагменты -->
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.aboutme.DetailsFragment"
+        android:label="Детали"/>
 
     <fragment
-        android:id="@+id/aboutFragment"
-        android:name="com.example.aboutme.AboutFragment"
-        android:label="О себе"/>
+        android:id="@+id/settingsFragment"
+        android:name="com.example.aboutme.SettingsFragment"
+        android:label="Настройки"/>
 </navigation>
+<!--<navigation xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    app:startDestination="@id/aboutFragment">-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/aboutFragment"-->
+<!--        android:name="com.example.aboutme.AboutFragment"-->
+<!--        android:label="О себе"/>-->
+<!--</navigation>-->
