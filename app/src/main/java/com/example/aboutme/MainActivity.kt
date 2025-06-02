@@ -37,7 +37,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
         //setContentView(R.layout.activity_main)
+
+        // Загружаем ОСНОВНОЙ макет с кнопками
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -50,7 +53,9 @@ class MainActivity : AppCompatActivity() {
 
         // Обработка кнопок
         binding.detailsButton.setOnClickListener {
-            navController.navigate(R.id.action_main_to_details)
+            setContentView(R.layout.fragment_container)
+            findNavController(R.id.nav_host_fragment).navigate(R.id.detailsFragment)
+//            navController.navigate(R.id.action_main_to_details)
         }
         binding.settingsButton.setOnClickListener {
             navController.navigate(R.id.action_main_to_settings)
